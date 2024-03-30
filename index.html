@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff; /* Cor de fundo para casos em que a imagem não carrega */
+        }
+        #conteudo {
+            width: 400px;
+            height: 300px;
+            background-image: url('entreg.png');
+            background-size: cover; /* Mantém a imagem de fundo cobrindo o elemento */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 15px; /* Arredonda as pontas da moldura */
+            box-shadow: 0 0 0 10px purple, 0 0 0 15px purple, 0 0 0 20px purple; /* Adicionando bordas extra */
+            box-sizing: border-box; /* Garantindo que a moldura esteja dentro das dimensões do elemento */
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 5px solid purple; /* Adicionando a mesma moldura nos botões */
+            border-radius: 15px; /* Arredondando as pontas dos botões */
+            background-color: rgba(128, 0, 128, 0.5); /* Definindo o fundo roxo semitransparente */
+            color: white; /* Mudando a cor do texto para branco */
+            font-weight: bold; /* Deixando o texto em negrito */
+        }
+    </style>
+</head>
+<body>
+    <div id="conteudo">
+        <button id="iniciar-servico">Iniciar Serviço</button>
+        <button id="buscar-jornais">Buscar Jornais</button>
+    </div>
+</body>
+</html>
